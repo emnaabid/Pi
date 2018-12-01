@@ -1,0 +1,22 @@
+user_produits:
+    resource: "@UserBundle/Controller/ProduitsController.php"
+    type:     annotation
+
+user_panier:
+    resource: "@UserBundle/Controller/PanierController.php"
+    type:     annotation
+
+user:
+    resource: "@UserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+user_wishlist:
+    resource: "@UserBundle/Controller/WishlistController.php"
+    type:     annotation
